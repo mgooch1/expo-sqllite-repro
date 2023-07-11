@@ -9,7 +9,7 @@ import { Asset } from "expo-asset";
 export default function App() {
 
 async function LoadDatabase() {
-    dbName = "main.db";
+    const dbName = "main.db";
   
     if (
       !(await FileSystem.getInfoAsync(FileSystem.documentDirectory + "SQLite"))
